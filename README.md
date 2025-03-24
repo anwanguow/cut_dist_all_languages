@@ -1,7 +1,7 @@
 The Implementation of Cut Distance in All Languages
 ==============
 
-This repository contains the implementation of the cut distance in all programming languages, including C, C++, Java, Python and Matlab.
+This repository contains the implementation of the cut distance in all programming languages, including pure C, C++, Java, Python and Matlab.
 
 The related article "Graph theory based approach to identify phase transitions in condensed matter" is published in Physical Review B (PRB) and can be accessed at https://journals.aps.org/prb/abstract/10.1103/PhysRevB.111.054116.
 
