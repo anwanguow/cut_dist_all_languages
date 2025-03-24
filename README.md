@@ -1,7 +1,7 @@
 Graph theory based approach to identify phase transitions in condensed matter
 ==============
 
-This repository contains the implementation of the cut distance from the article "Graph theory based approach to identify phase transitions in condensed matter" in all languages, including C++, Java, Python and Matlab.
+This repository contains the implementation of the cut distance from article "Graph theory based approach to identify phase transitions in condensed matter" in all languages, including C++, Java, Python and Matlab.
 
 The related article is published in Physical Review B (PRB) and can be accessed at https://journals.aps.org/prb/abstract/10.1103/PhysRevB.111.054116.
 
