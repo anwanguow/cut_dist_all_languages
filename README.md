@@ -1,4 +1,4 @@
-Graph theory based approach to identify phase transitions in condensed matter
+The Implementation of Cut Distance in All Languages
 ==============
 
 This repository contains the implementation of the cut distance from article "Graph theory based approach to identify phase transitions in condensed matter" in all languages, including C++, Java, Python and Matlab.
