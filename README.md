@@ -10,7 +10,7 @@ The repo of this article is https://github.com/anwanguow/graph_phase_transition.
 Reference
 -----------------
 
-Please consider adding the following citation if you use this work in your research.
+Please consider adding the following citation if you use this code in your research.
 
 ```bibtex
 @article{wang2025graph,
