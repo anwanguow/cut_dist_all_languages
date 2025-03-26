@@ -1,7 +1,7 @@
 The Implementation of Cut Distance in All Languages
 ==============
 
-This repository contains the implementation of the cut distance in all programming languages, including pure C, C++, Java, Python, Fortran, Matlab, and Mathematica (including both imperative and functional programming).
+This repository contains the implementation of the cut distance in all programming languages, including pure C, C++, Java, Python, Fortran, Matlab, and Mathematica (both imperative and functional programming).
 
 The related article "Graph theory based approach to identify phase transitions in condensed matter" is published in Physical Review B (PRB) and can be accessed at https://journals.aps.org/prb/abstract/10.1103/PhysRevB.111.054116.
 
