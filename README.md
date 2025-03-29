@@ -27,6 +27,6 @@ Please consider adding the following citation if you use this code in your resea
 
 Contact:
 -----------------
-My email is: An.Wang@warwick.ac.uk.
+An Wang: An.Wang@warwick.ac.uk.
 
 
