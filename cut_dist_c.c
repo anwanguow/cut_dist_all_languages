@@ -594,7 +594,7 @@ void normalize_columns(Matrix *X) {
 
 int main(void) {
     srand((unsigned)time(NULL));
-    int n = 30;
+    int n = 400;
     double p1 = 0.2, p2 = 0.5;
     Matrix A = erdos_renyi_graph(n, p1);
     Matrix B = erdos_renyi_graph(n, p2);
