@@ -1,5 +1,5 @@
 function cut_dist
-    n = 30;
+    n = 400;
     p1 = 0.2;
     p2 = 0.5;
     A = triu(rand(n) < p1, 1);
