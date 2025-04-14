@@ -276,7 +276,7 @@ end module cutnorm_mod
 program main
   use cutnorm_mod
   implicit none
-  integer, parameter :: n = 30
+  integer, parameter :: n = 400
   real(8), dimension(n,n) :: A, B
   real(8) :: s, r
   real(8) :: p1, p2
