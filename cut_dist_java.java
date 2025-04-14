@@ -557,7 +557,7 @@ public class CutDistance {
     }
     
     public static void main(String[] args) {
-        int n = 30;
+        int n = 400;
         double p1 = 0.2, p2 = 0.5;
         List<List<Double>> A = erdosRenyiGraph(n, p1);
         List<List<Double>> B = erdosRenyiGraph(n, p2);
