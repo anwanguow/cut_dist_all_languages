@@ -97,7 +97,7 @@ def optimize(x, fun, args, xtol=1e-8, ftol=1e-10, gtol=1e-8, rho=1e-4,
         Cval = (gamma * Qp * Cval + f) / Q
     return x, g
 
-n = 30
+n = 400
 p_1 = 0.2
 p_2 = 0.5
 
