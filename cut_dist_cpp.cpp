@@ -474,7 +474,7 @@ Matrix erdosRenyiGraph(int n, double p) {
 }
 
 int main() {
-    int n = 30;
+    int n = 400;
     double p1 = 0.2, p2 = 0.5;
     Matrix A = erdosRenyiGraph(n, p1);
     Matrix B = erdosRenyiGraph(n, p2);
