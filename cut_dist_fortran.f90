@@ -163,7 +163,6 @@ contains
     Q    = 1.0d0
     Cval = f
 
-    ! 主迭代
     do itr = 1, mxitr
       dtXP = dtX; xp = x; gp = g; fp = f
       deriv = rho * nrmG**2
@@ -186,8 +185,6 @@ contains
         if (f <= Cval - tau*deriv .or. ls_iter >= 5) exit
         tau = eta * tau
       end do
-
-      ! 更新梯度与度量
       do i = 1, n2
         xtg(i) = sum(x(:,i) * g(:,i))
         gg(i)   = sum(g(:,i)**2)
