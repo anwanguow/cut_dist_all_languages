@@ -29,6 +29,6 @@ Please consider adding the following citation if you use this code in your resea
 
 Contact:
 -----------------
-An Wang: An.Wang@warwick.ac.uk.
+An Wang: amturing@outlook.com
 
 
