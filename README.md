@@ -12,7 +12,7 @@ The implementation of cut distance is based on computing the cut norm via a semi
 Reference
 -----------------
 
-Please consider adding the following citation if you use this code in your research.
+Please consider adding the following citation if you find it is useful to your research.
 
 ```bibtex
 @article{wang2025graph,
