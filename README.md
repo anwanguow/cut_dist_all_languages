@@ -11,7 +11,7 @@ Algorithm Implementation:
 For a matrix $A \in \mathbb{R}^{N \times N}$, its $(\infty \to 1)$-norm is defined as:
 
 $$
-|A|_{\infty \to 1} 
+|A|_{\infty \to 1} = \max_{X \in M_{N,p}} \langle A, X {\rangle}_F,
 $$
 
 where $M_{N,p} = \{ X \in \mathbb{R}^{N \times p} : X^T X = I \}$ is called Stiefel manifold, and the following is the Frobenius inner product:
