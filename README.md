@@ -17,8 +17,7 @@ $$
 where $M_{N,p} = \{ X \in \mathbb{R}^{N \times p} : X^T X = I \}$ is called Stiefel manifold, and the following is the Frobenius inner product:
 
 $$
-\langle A, X\rangle_F = \sum_{i,j}A_{ij}X_{ij},
-        \quad X\in \mathbb{R}^{N\times p}.
+\langle A, X\rangle_F = \sum_{i,j}A_{ij}X_{ij}, \quad X\in \mathbb{R}^{N\times p}.
 $$
 
 Note that when $p=1$ one recovers the usual $\ell_\infty\!\to\!\ell_1$ operator norm:
