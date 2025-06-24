@@ -136,7 +136,7 @@ $$
 G = \mathfrak{A} - \mathscr{X} \frac{\mathscr{X}^T \mathfrak{A} + \mathfrak{A}^T \mathscr{X}}{2}.
 $$
 
-Equation \eqref{equ:init_G_gradient} offers the direction for gradient update at the start of the algorithm, where the term after the minus sign ensures that the optimization process adheres to the constraints of the Stiefel manifold $M_{p,\mathfrak{n}}$.
+This equation offers the direction for gradient update at the start of the algorithm, where the term after the minus sign ensures that the optimization process adheres to the constraints of the Stiefel manifold $M_{p,\mathfrak{n}}$.
 
 In order to make sure the matrix $\mathscr{X}$ always satisfies $\mathscr{X}^T \mathscr{X} = I$, the Cayley transformation is used to implement the process of assignment. Let $G = \mathfrak{A} - \mathscr{X} \frac{\mathscr{X}^T \mathfrak{A} + \mathfrak{A}^T \mathscr{X}}{2}$, and $W = G \mathscr{X}^T - \mathscr{X} G^T$, so that $W^T = -W$ and $W$ is skew-symmetric. Then the update is as follows:
 
