@@ -209,6 +209,12 @@ $$
 The relationship between these variables and the objective is:
 
 $$
-\mathrm{d}_{\square}(G, H) = |M^G - M^H|_{\square} = |A|_{\square} \approx \frac{|A|_{\infty \rightarrow 1}}{K_G} \approx \frac{|\mathfrak{A}|_{\infty \rightarrow 1}}{4}.
+|A|_{\square} \approx \frac{|A|_{\infty \rightarrow 1}}{K_G} \approx \frac{|\mathfrak{A}|_{\infty \rightarrow 1}}{4}.
+$$
+
+Especially, for node-labelled graphs, one can use:
+
+$$
+\mathrm{d}_{\square}(G, H) = |M^G - M^H|_{\square}.
 $$
 
