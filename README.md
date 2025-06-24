@@ -7,7 +7,7 @@ The implementation of cut distance is based on computing the cut norm via a semi
 
 Algorithm Implementation
 -----------------
-The implementation of the Cut distance algorithm can be found in [Algorithm.pdf](Algorithm.pdf) in this repository.
+The implementation of the cut distance algorithm can be found in [Algorithm.pdf](Algorithm.pdf) in this repository.
 
 Please note that its content is consistent with [Algorithm.md](Algorithm.md), but since GitHub does not support rendering LaTeX formulas in markdown files, the markdown version may not display correctly.
 
