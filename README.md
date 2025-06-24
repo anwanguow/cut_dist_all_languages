@@ -17,7 +17,7 @@ The related article "Graph theory based approach to identify phase transitions i
 
 In this article, cut distance is used for constructing two kinds of pseudo-order parameters, i.e., structural order parameter $\mathcal{D}_s$ and dynamical order parameter $\mathcal{D}_d$.
 
-Due to space constraints, the main text of this article only outlines the core idea of the algorithm and does not delve into every detail, since the main focus of the article is on the physics. Therefore, we offered the detailed description in this repo.
+Due to space constraints, the main text of this article only outlines the core idea of the algorithm and does not delve into every detail, since the main focus of the article is on the physics. Therefore, we offered the detailed description about cut distance in this repo.
 
 The repo of this article is https://github.com/anwanguow/graph_phase_transition.
 
