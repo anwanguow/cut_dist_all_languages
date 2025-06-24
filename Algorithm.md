@@ -21,7 +21,7 @@ $$
   = \max_{\|x\|_\infty=1,\;\|y\|_\infty=1} x^T A y,
 $$
 
-where $x,y\in\mathbb{R}^N$ are the original symbolic $\{\pm1\}$ vectors. To obtain the orthogonal relaxation, we replace each scalar sign variable $x_i,y_j\in\{\pm1\}$ by a unit vector $u_i,v_j\in\mathbb{R}^d$ with $\|u_i\|_2=\|v_j\|_2=1$, and then stack $\{u_i\}$ into $U\in\mathbb{R}^{d\times N}$, and stack $\{u_i\}$ into $V\in\mathbb{R}^{d\times N}$.
+where $x,y\in\mathbb{R}^N$ are the original symbolic $\{\pm1\}$ vectors. To obtain the orthogonal relaxation, we replace each scalar sign variable $x_i,y_j\in\{\pm1\}$ by a unit vector $u_i,v_j\in\mathbb{R}^d$ with $\|u_i\|_2=\|v_j\|_2=1$, and then stack $\{u_i\}$ into $U\in\mathbb{R}^{d\times N}$, and stack $\{v_i\}$ into $V\in\mathbb{R}^{d\times N}$.
 
 This transforms the discrete optimization over $\{\pm1\}$ into a continuous problem on the Stiefel manifold $M_{N,p}$. 
 
