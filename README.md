@@ -19,7 +19,7 @@ The repo of this article is https://github.com/anwanguow/graph_phase_transition.
 
 In this article, cut distance is used for constructing two kinds of pseudo-order parameters, i.e., structural order parameter $\mathcal{D}_s$ and dynamical order parameter $\mathcal{D}_d$.
 
-Due to space constraints, this article only outlines the core idea of the algorithm and does not delve into every detail. Therefore, we offered the detailed description about cut distance in this repo.
+This article only outlines the core idea of the algorithm and does not delve into every detail. Therefore, we offered the detailed description about cut distance in this repo.
 
 Contact:
 -----------------
