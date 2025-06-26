@@ -14,6 +14,7 @@ Please note that its content is consistent with [Algorithm.md](Algorithm.md), bu
 Related Article:
 -----------------
 The related article "Graph theory based approach to identify phase transitions in condensed matter" is published in Physical Review B (PRB) and can be accessed at https://journals.aps.org/prb/abstract/10.1103/PhysRevB.111.054116.
+
 The repo of this article is https://github.com/anwanguow/graph_phase_transition.
 
 In this article, cut distance is used for constructing two kinds of pseudo-order parameters, i.e., structural order parameter $\mathcal{D}_s$ and dynamical order parameter $\mathcal{D}_d$.
