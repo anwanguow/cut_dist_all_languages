@@ -218,3 +218,12 @@ $$
 \mathrm{d}_{\square}(G, H) = |M^G - M^H|_{\square}.
 $$
 
+It should be noted that its validity is discussed in detail in Section 8.1.2 of [Large network and graph limits](https://lovasz.web.elte.hu//bookxx/hombook-almost.final.pdf), and this is also the method we use in the [paper](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.111.054116).
+
+
+Additional Notes:
+-----------------
+
+Apart from the above, we would also like to clarify a point in our [paper](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.111.054116) which is not an error but could potentially cause confusion. In the code implementation, we used the trick of extending $A$ and $X$ to square matrices and expressing the objective function as taking the strict trace of a square matrix. We stress that it is purely a technical convenience for programming and computation, and is not central to the theoretical foundation ([Alon](https://web.math.princeton.edu/~naor/homepage%20files/cutnorm.pdf) and [Wen](https://link.springer.com/article/10.1007/s10107-012-0584-1)). Except for this repo, this detail is also reflected in the original code, which was archived on [Zenodo](https://zenodo.org/records/14843066) at the time of publication and used for all computations reported in our [paper](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.111.054116).
+
+Furthermore, we present the Frobenius inner product $\langle A^T, X \rangle_F$ as the trace taking form of $\mathrm{Tr}(AX)$ in our [paper](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.111.054116), and it is standard terminology of the optimization field. Another observation is that the task of Eq.(3) in our [paper](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.111.054116) is to perform a trial update along the original gradient $A$ prior to the formation of $W_0=GX^{\mathsf T}-XG^{\mathsf T}$ expressly. Here $A$ can also be replaced by $W_0$ without performing anything to the subsequent iterations or the eventual output of $|A|_{\infty \to 1}$. Moreover, both $(I+\frac{\tau}{2}W)^{-1}(I-\frac{\tau}{2}W)$ and $(I-\frac{\tau}{2}W)^{-1}(I+\frac{\tau}{2}W)$ are correct expressions for the Cayley transform in Eq.(3) and Eq.(6), and the only difference between them is the sign of $\tau$. As long as $W^{\mathsf T}=-W$ holds, each update will stay on the Stiefel manifold, thereby ensuring both the correctness and convergence of the iteration.
