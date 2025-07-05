@@ -248,7 +248,7 @@ $$
 G = 2 \cdot \left[\mathfrak{A} - \mathscr{X} \frac{\mathscr{X}^T \mathfrak{A} + \mathfrak{A}^T \mathscr{X}}{2} \right].
 $$
 
-What we have previously written is a version that omits the multiplication by $2$. In fact, whether the gradient expression in $G$ is multiplied by $2$ merely determines whether this coefficient appears in the gradient or within the Cayley transform. This distinction does not affect the correctness or convergence of the iterative process in any way.
+What we have previously written in this document (Algorithm.pdf) is a version that omits the multiplication by $2$. In fact, whether the gradient expression in $G$ is multiplied by $2$ merely determines whether this coefficient appears in the gradient or within the Cayley transform. Obviously, this distinction does not affect the correctness or convergence of the iterative process in any way.
 
 
 
