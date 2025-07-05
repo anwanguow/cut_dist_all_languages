@@ -240,13 +240,17 @@ $$
 G = \mathfrak{A} - \mathscr{X} \frac{\mathscr{X}^T \mathfrak{A} + \mathfrak{A}^T \mathscr{X}}{2}.
 $$
 
-In fact, these two notations are entirely equivalent. This is evident because, in matrix $\mathfrak{A}$, $-A\mathbf{1}$ in the upper triangular part and $-\mathbf{1}^T A$ in the lower triangular part are transposes of each other. As a result, $\mathfrak{A}$ is a symmetric matrix, that is, $\mathfrak{A}=\mathfrak{A}^T$, so $\mathfrak{A}+\mathfrak{A}^T=2\mathfrak{A}$.
+In fact, these two notations are entirely equivalent.
 
-Therefore, the gradient in this document (Algorithm.pdf) can be written as:
+For the extended square matrix $\mathfrak{A} \in \mathbb{R}^{(N+1) \times (N+1)}$, $-A\mathbf{1}$ in the upper triangular part and $-\mathbf{1}^T A$ in the lower triangular part are transposes of each other. As a result, $\mathfrak{A}$ is a symmetric matrix, that is, $\mathfrak{A}=\mathfrak{A}^T$, so $\mathfrak{A}+\mathfrak{A}^T=2\mathfrak{A}$.
+
+Therefore, The gradient in the [PRB paper](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.111.054116) should naturally be converted to:
 
 $$
 G = 2 \cdot \left[\mathfrak{A} - \mathscr{X} \frac{\mathscr{X}^T \mathfrak{A} + \mathfrak{A}^T \mathscr{X}}{2} \right].
 $$
+
+where $A$ and $X$ from the [PRB paper](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.111.054116) are replaced by $\mathfrak{A}$ and $\mathscr{X}$, respectively.
 
 What we have previously written in this document (Algorithm.pdf) is a version that omits the multiplication by $2$. In fact, whether the gradient expression in $G$ is multiplied by $2$ merely determines whether this coefficient appears in the gradient or within the Cayley transform. Obviously, this distinction does not affect the correctness or convergence of the iterative process in any way.
 
