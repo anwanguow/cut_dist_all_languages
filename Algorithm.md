@@ -218,12 +218,37 @@ $$
 \mathrm{d}_{\square}(G, H) = |M^G - M^H|_{\square}.
 $$
 
-It should be noted that its validity is discussed in detail in Section 8.1.2 of [Large network and graph limits](https://lovasz.web.elte.hu//bookxx/hombook-almost.final.pdf), and this is also the method we use in the [paper](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.111.054116).
+It should be noted that its validity is discussed in detail in Section 8.1.2 of [Large network and graph limits](https://lovasz.web.elte.hu//bookxx/hombook-almost.final.pdf), and this is also the method we use in the [PRB paper](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.111.054116).
 
 
 Additional Notes:
 -----------------
 
-In the code implementation, we used the trick of extending $A$ and $X$ to square matrices and expressing the objective function as taking the strict trace of a square matrix. We stress that it is purely a technical convenience for programming and computation, and is not central to the theoretical foundation ([Alon](https://web.math.princeton.edu/~naor/homepage%20files/cutnorm.pdf) and [Wen](https://link.springer.com/article/10.1007/s10107-012-0584-1)). Except for this repo, this detail is also reflected in the original code, which was archived on [Zenodo](https://zenodo.org/records/14843066) at the time of publication and used for all computations reported in our [paper](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.111.054116).
+In the code implementation, we used the trick of extending $A$ and $X$ to square matrices and expressing the objective function as taking the strict trace of a square matrix. We stress that it is purely a technical convenience for programming and computation, and is not central to the theoretical foundation ([Alon](https://web.math.princeton.edu/~naor/homepage%20files/cutnorm.pdf) and [Wen](https://link.springer.com/article/10.1007/s10107-012-0584-1)). Except for this repo, this detail is also reflected in the original code, which was archived on [Zenodo](https://zenodo.org/records/14843066) at the time of publication and used for all computations reported in our [PRB paper](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.111.054116).
 
-Furthermore, we present the Frobenius inner product $\langle A^T, X \rangle_F$ as the trace taking form of $\mathrm{Tr}(AX)$ in our [paper](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.111.054116), and it is standard terminology of the optimization field. Another observation is that the task of Eq.(3) in our [paper](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.111.054116) is to perform a trial update along the original gradient $A$ prior to the formation of $W_0=GX^{\mathsf T}-XG^{\mathsf T}$ expressly. Here $A$ can also be replaced by $W_0$ without performing anything to the subsequent iterations or the eventual output of $|A|_{\infty \to 1}$. Moreover, both $(I+\frac{\tau}{2}W)^{-1}(I-\frac{\tau}{2}W)$ and $(I-\frac{\tau}{2}W)^{-1}(I+\frac{\tau}{2}W)$ are correct expressions for the Cayley transform in Eq.(3) and Eq.(6), and the only difference between them is the sign of $\tau$. As long as $W^{\mathsf T}=-W$ holds, each update will stay on the Stiefel manifold, thereby ensuring both the correctness and convergence of the iteration.
+Furthermore, we present the Frobenius inner product $\langle A^T, X \rangle_F$ as the trace taking form of $\mathrm{Tr}(AX)$ in our [PRB paper](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.111.054116), and it is standard terminology of the optimization field. Another observation is that the task of Eq.(3) in our [PRB paper](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.111.054116) is to perform a trial update along the original gradient $A$ prior to the formation of $W_0=GX^{\mathsf T}-XG^{\mathsf T}$ expressly. Here $A$ can also be replaced by $W_0$ without performing anything to the subsequent iterations or the eventual output of $|A|_{\infty \to 1}$. Moreover, both $(I+\frac{\tau}{2}W)^{-1}(I-\frac{\tau}{2}W)$ and $(I-\frac{\tau}{2}W)^{-1}(I+\frac{\tau}{2}W)$ are correct expressions for the Cayley transform in Eq.(3) and Eq.(6), and the only difference between them is the sign of $\tau$. As long as $W^{\mathsf T}=-W$ holds, each update will stay on the Stiefel manifold, thereby ensuring both the correctness and convergence of the iteration.
+
+Finally, for the gradient, the notation used in our [PRB paper](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.111.054116) is:
+
+$$
+G = A + A^{T} - X (X^T A + A^T X),
+$$
+
+whereas the notation used in this document (Algorithm.pdf) is:
+
+$$
+G = \mathfrak{A} - \mathscr{X} \frac{\mathscr{X}^T \mathfrak{A} + \mathfrak{A}^T \mathscr{X}}{2}.
+$$
+
+In fact, these two notations are entirely equivalent. This is evident because, in matrix $\mathfrak{A}$, $-A\mathbf{1}$ in the upper triangular part and $-\mathbf{1}^T A$ in the lower triangular part are transposes of each other. As a result, $\mathfrak{A}$ is a symmetric matrix, that is, $\mathfrak{A}=\mathfrak{A}^T$, so $\mathfrak{A}+\mathfrak{A}^T=2\mathfrak{A}$.
+
+Therefore, the gradient in this document (Algorithm.pdf) can be written as:
+
+$$
+G = 2 \cdot \left[\mathfrak{A} - \mathscr{X} \frac{\mathscr{X}^T \mathfrak{A} + \mathfrak{A}^T \mathscr{X}}{2} \right].
+$$
+
+What we have previously written is a version that omits the multiplication by $2$. In fact, whether the gradient expression in $G$ is multiplied by $2$ merely determines whether this coefficient appears in the gradient or within the Cayley transform. This distinction does not affect the correctness or convergence of the iterative process in any way.
+
+
+
