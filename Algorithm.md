@@ -214,12 +214,17 @@ $$
 
 Especially, for node-labelled graphs, one can use:
 
+
+If $G$ and $H$ are node-labelled graphs on the same vertex set, and their adjacency matrices $M^G$ and $M^H$ are arranged so that the order of rows and columns corresponds to the same ordering of the vertices, one can directly take the permutation in the formula of cut distance (See Section 8.2.2 of [Large networks and graph limits](https://lovasz.web.elte.hu//bookxx/hombook-almost.final.pdf)) as the identity operator and have:
+
 $$
 \mathrm{d}_{\square}(G, H) = |M^G - M^H|_{\square}.
 $$
 
-It should be noted that its validity is discussed in detail in Section 8.1.2 of [Large network and graph limits](https://lovasz.web.elte.hu//bookxx/hombook-almost.final.pdf), and this is also the method we use in the [PRB paper](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.111.054116).
 
+It should be noted that its validity is discussed in detail in Section 8.1.2 of [Large networks and graph limits](https://lovasz.web.elte.hu//bookxx/hombook-almost.final.pdf), and this is also the method we use in the [PRB paper](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.111.054116).
+
+We may also need to emphasize that "node-labelled graphs" above refer to the case where all nodes are labeled in the "partially labeled graphs" defined in Section 3.2 of [Large networks and graph limits](https://lovasz.web.elte.hu//bookxx/hombook-almost.final.pdf), which are also called "flat" or "fully labeled" graphs in that book. They are referred to by different names in various references, but all mean the same thing, as long as one does not confuse them.
 
 Additional Notes:
 -----------------
